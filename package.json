@@ -2,7 +2,7 @@
   "name": "kitasil-chart-co",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mori-kei.github.io//kitasil-chart-co",
+  "homepage": "https://morikei.github.io/kitasil-chart-co",
   "dependencies": {
     "@material-ui/core": "^4.12.4",
     "@testing-library/jest-dom": "^5.16.4",

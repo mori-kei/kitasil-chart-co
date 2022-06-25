@@ -12,7 +12,53 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+#overlay{
+  /*　画面全体を覆う設定　*/
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.5);
+  
+    /*　画面の中央に要素を表示させる設定　*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  #content{
+    z-index:2;
+    width:50%;
+    padding: 1em;
+    background:#fff;
+  }
 
+  @media screen and (max-width: 1024px) {
+    /* 480px以下に適用されるCSS（スマホ用） */
+    .flex{
+      display: flex;
+      align-items: center;
+    }
+    .flex div:nth-child(2){
+      text-align: right;
+    }
+    #content{
+    z-index:2;
+    width:85%;
+    padding: 1em;
+    background:#fff;
+    
+  }
+  #content div{
+    width: 100% !important;
+  
+  }#content div svg {
+    width: 130%;
+    
+    margin: 0 auto;
+  }
+  }
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
